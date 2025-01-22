@@ -17,6 +17,8 @@
         position: absolute;
         width: 100%;
         height: 100%;
+        background-color: black;
+        z-index: 2;
     }
 
     &__wrapper {
@@ -37,12 +39,29 @@
         height: calc(100dvh - 4rem);
     }
     
+    &--half-height {
+        min-height: calc(50dvh - 4rem);
+    }
+    
     .hero-text {
         display: flex;
         flex-direction: column;
         row-gap: 2rem;
-    }
 
+        &--center {
+            text-align: center;
+        }
+
+        &--white {
+            h1, p {
+                color: white;
+            }
+        }
+        
+        &__headline {
+            font-size: 3rem;
+        }
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -59,6 +78,12 @@
     
             &--center-align {
                 justify-content: center;
+            }
+        }
+
+        .hero-text {
+            &__headline {
+                font-size: 4rem;
             }
         }
     }

@@ -1,0 +1,78 @@
+@use "../../../main";
+@use "../../../abstracts/variables" as *;
+
+#content {
+
+    .member-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+
+        .team-member {
+            display: flex;
+            flex-direction: column;
+            row-gap: .5rem;
+
+            &__picture {
+                height: 200px;
+                object-fit: cover;
+                border-radius: 5px;
+                box-shadow: $box-shadow-default;
+            }
+
+            &__name {
+                font-weight: bold;
+                font-family: 'Noto Serif JP', Arial, sans-serif;
+                font-size: 1.5rem;
+                color: $arcadia-primary-one;
+            }
+        }
+
+        &--white {
+            .team-member {
+                &__name, &__position {
+                    color: white;
+                }
+            }
+        }
+    }
+
+    #hero {
+        .hero__bg-mask {
+            opacity: .5;
+        }
+    }
+
+    #app-leaders {
+        background-color: $arcadia-primary-one;
+
+        .section-main__title {
+            color: white;
+        }
+    }
+
+    #finance {
+        background-color: $bg-black;
+        
+        .section-main__title {
+            color: white;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    #content {
+        
+        .member-list {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+
+            .team-member {
+                &__picture {
+                    width: 280px;
+                    height: 280px;
+                }
+            }
+        }
+    }
+}
