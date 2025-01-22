@@ -1,5 +1,6 @@
 @use 'abstracts' as *;
 @forward 'base';
+@forward 'components';
 @forward 'layouts';
 
 * {
@@ -11,7 +12,7 @@ html, body {
     background-color: $bg-body-light-primary;
     scroll-behavior: smooth;
     scroll-padding: 4em;
-    font-size: 16px;
+    font-size: 18px;
     width: 100%;
 }
 
