@@ -205,6 +205,20 @@ em {
     font-size: 4rem;
   }
 }
+.section {
+  padding: 4.5rem 20px;
+}
+.section__wrapper {
+  max-width: 75rem;
+  margin: auto;
+}
+.section__wrapper .section-main {
+  margin-bottom: 3.5rem;
+}
+.section__wrapper .section-main--center {
+  text-align: center;
+}
+
 * {
   font-family: "Noto Sans JP", Helvetica, Arial, sans-serif;
   color: #3E3E42;
@@ -226,6 +240,10 @@ h1, h2, h3, h4 {
   font-weight: bold;
   font-family: "Noto Serif JP", Arial, sans-serif;
   color: #505477;
+}
+
+h2 {
+  font-size: 2.25rem;
 }
 
 .mobile-only {
