@@ -23,12 +23,17 @@ a {
 h1, h2, h3, h4 {
     font-weight: bold;
     font-family: 'Noto Serif JP', Arial, sans-serif;
-    color: $arcadia-primary-one;
+    color: $text-dark-primary;
 }
 
 h2 {
-    font-size: 2.25rem;
+    font-size: 2rem;
 }
+
+h3 {
+    font-size: 1.3rem;
+}
+
 .mobile-only {
     display: block;
 }

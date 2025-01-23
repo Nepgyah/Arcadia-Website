@@ -9,6 +9,15 @@
 
         .section-main {
             margin-bottom: 3.5rem;
+            display: flex;
+            flex-direction: column;
+            row-gap: 2rem;
+        
+            &--white {
+                h2, p {
+                    color: white;
+                }
+            }
 
             &--center {
                 text-align: center;
