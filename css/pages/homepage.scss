@@ -2,7 +2,7 @@
 @use '../abstracts/variables' as *;
 
 #content {
-
+    
     .app-tile {
         border-radius: 10px;
         box-shadow: $box-shadow-default;
@@ -90,6 +90,24 @@
             }
         }
     }
+
+    #partners {
+        background: $gradient-pink-blue-horizontal;
+
+        .section-content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+
+
+            img {
+                max-width: 100px;
+                height: unset;
+                margin: 1rem;
+            }
+        }
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -138,5 +156,17 @@
             }
         }
 
+        #partners {
+
+            #partners-sakura {
+                top: 4rem;
+                right: 0;
+            }
+            .section-content {
+                img {
+                    max-width: 175px;
+                }
+            }
+        }
     }
 }
