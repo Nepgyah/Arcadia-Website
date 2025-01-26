@@ -3,7 +3,7 @@
 .section {
     padding: 4.5rem 20px;
     position: relative;
-
+    overflow-x: hidden;
     &__bg-image {
         position: absolute;
     }
