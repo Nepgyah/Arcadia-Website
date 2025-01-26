@@ -135,6 +135,49 @@
             }
         }
     }
+    
+    #secondary-apps {
+        background: $gradient-orange-pink-vertical;
+
+        .left-col {
+            margin-bottom: 1rem;
+        }
+
+        .right-col {
+            display: flex;
+            flex-direction: column;
+            row-gap: 1rem;
+        }
+        #iku, #hiku, #shiru, #kumitateru, #kiku {
+            height: 220px;
+        }
+
+        #iku {
+            background-color: $iku-primary;
+            grid-template-columns: 45% 55%;
+            margin-bottom: 1rem;
+        }
+
+        #hiku {
+            background-color: $hiku-primary;
+            grid-template-columns: 55% 45%;
+        }
+
+        #shiru {
+            background-color: $shiru-primary;
+            grid-template-columns: 60% 40%;
+        }
+
+        #kumitateru {
+            background-color: $kumitateru-primary;
+            grid-template-columns: 40% 60%;
+        }
+
+        #kiku {
+            background-color: $kiku-primary;
+            grid-template-columns: 50% 50%;
+        }
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -213,6 +256,13 @@
                         padding: 0 20px;
                     }
                 }
+            }
+        }
+
+        #secondary-apps {
+    
+            #iku, #hiku {
+                height: 339px;
             }
         }
     }

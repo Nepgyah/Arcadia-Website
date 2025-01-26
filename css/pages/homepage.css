@@ -191,7 +191,7 @@ em {
 
 @media only screen and (min-width: 768px) {
   .hero__wrapper {
-    padding: 7rem 0;
+    padding: 7rem 20px;
   }
   .hero__button-container {
     flex-direction: row;
@@ -234,7 +234,7 @@ em {
 
 @media only screen and (min-width: 768px) {
   .section {
-    padding: 5rem 0;
+    padding: 5rem 20px;
   }
   .section--margin-top-large {
     padding-top: 9rem;
@@ -244,6 +244,12 @@ em {
   }
   .section .section-main--half-width {
     width: 50%;
+  }
+  .section .section-content--two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    -moz-column-gap: 1rem;
+         column-gap: 1rem;
   }
 }
 * {
@@ -394,6 +400,41 @@ h3 {
 #content #foundation .section-content .step-card p {
   text-align: center;
 }
+#content #secondary-apps {
+  background: linear-gradient(to bottom, #FFD7BA, #FFA7A1);
+}
+#content #secondary-apps .left-col {
+  margin-bottom: 1rem;
+}
+#content #secondary-apps .right-col {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+#content #secondary-apps #iku, #content #secondary-apps #hiku, #content #secondary-apps #shiru, #content #secondary-apps #kumitateru, #content #secondary-apps #kiku {
+  height: 220px;
+}
+#content #secondary-apps #iku {
+  background-color: #483D8B;
+  grid-template-columns: 45% 55%;
+  margin-bottom: 1rem;
+}
+#content #secondary-apps #hiku {
+  background-color: #F0D66A;
+  grid-template-columns: 55% 45%;
+}
+#content #secondary-apps #shiru {
+  background-color: #FFA468;
+  grid-template-columns: 60% 40%;
+}
+#content #secondary-apps #kumitateru {
+  background-color: #3E3E42;
+  grid-template-columns: 40% 60%;
+}
+#content #secondary-apps #kiku {
+  background-color: #9370DB;
+  grid-template-columns: 50% 50%;
+}
 
 @media only screen and (min-width: 768px) {
   #content .app-tile#miru {
@@ -441,5 +482,8 @@ h3 {
   }
   #content #foundation .section-content .step-card p {
     padding: 0 20px;
+  }
+  #content #secondary-apps #iku, #content #secondary-apps #hiku {
+    height: 339px;
   }
 }/*# sourceMappingURL=homepage.css.map */
