@@ -94,6 +94,16 @@ em {
   background-color: #505477;
   color: white;
 }
+.button--primary:hover {
+  background-color: #3E415B;
+}
+.button--primary--pink {
+  background-color: #FFAAAA;
+  color: #505477;
+}
+.button--primary--pink:hover {
+  background-color: #F982AA;
+}
 .button--outline {
   border: 2px solid;
   border-color: #505477;
@@ -113,7 +123,7 @@ em {
   justify-content: space-between;
   height: 100%;
   max-width: 75rem;
-  padding: 0.5rem 0;
+  padding: 0.5rem 20px;
   margin: 0 auto;
 }
 .navbar__logo {
@@ -272,7 +282,7 @@ a {
 h1, h2, h3, h4 {
   font-weight: bold;
   font-family: "Noto Serif JP", Arial, sans-serif;
-  color: #3E3E42;
+  color: #505477;
 }
 
 h2 {

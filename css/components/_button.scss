@@ -17,6 +17,19 @@
     &--primary {
         background-color: $arcadia-primary-one;
         color: white;
+
+        &:hover {
+            background-color: $arcadia-primary-two;
+        }
+
+        &--pink {
+            background-color: $arcadia-secondary-one;
+            color: $arcadia-primary-one;
+
+            &:hover {
+                background-color: $arcadia-secondary-two;
+            }
+        }
     }
 
     &--outline {
