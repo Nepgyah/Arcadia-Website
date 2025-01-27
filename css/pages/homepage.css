@@ -242,6 +242,9 @@ em {
 .section .section-main--center {
   text-align: center;
 }
+.section .section-main__name {
+  font-size: 0.75rem;
+}
 
 @media only screen and (min-width: 768px) {
   .section {
@@ -435,7 +438,8 @@ h3 {
 #content #foundation .section-content {
   display: flex;
   flex-direction: column;
-  row-gap: 2.5rem;
+  -moz-column-gap: 2.5rem;
+       column-gap: 2.5rem;
 }
 #content #foundation .section-content .step-card {
   display: flex;
@@ -448,6 +452,8 @@ h3 {
   height: 350px;
   border-radius: 15px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 #content #foundation .section-content .step-card p {
   text-align: center;

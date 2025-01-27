@@ -242,6 +242,9 @@ em {
 .section .section-main--center {
   text-align: center;
 }
+.section .section-main__name {
+  font-size: 0.75rem;
+}
 
 @media only screen and (min-width: 768px) {
   .section {
