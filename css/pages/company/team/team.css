@@ -129,7 +129,7 @@ em {
 .navbar__links {
   display: none;
 }
-.navbar .open-dropdown {
+.navbar__links.open-dropdown {
   position: fixed;
   left: 0;
   top: 4rem;
@@ -139,31 +139,34 @@ em {
   flex-direction: column;
   justify-content: space-between;
 }
-.navbar .open-dropdown .has-dropdown .dropdown-title {
+.navbar__links.open-dropdown .has-dropdown .dropdown-title {
   padding: 20px;
   color: white;
 }
-.navbar .open-dropdown .has-dropdown .dropdown-title:hover {
+.navbar__links.open-dropdown .has-dropdown .dropdown-title:hover {
   background-color: #3E415B;
   cursor: pointer;
 }
-.navbar .open-dropdown .has-dropdown .dropdown-content {
+.navbar__links.open-dropdown .has-dropdown .dropdown-content {
   overflow: hidden;
   max-height: 0;
   transition: all 0.3s ease-in-out;
 }
-.navbar .open-dropdown .has-dropdown .dropdown-content a {
+.navbar__links.open-dropdown .has-dropdown .dropdown-content a {
   padding-left: 60px;
 }
-.navbar .open-dropdown .has-dropdown.showing-content .dropdown-content {
+.navbar__links.open-dropdown .has-dropdown.showing-content .dropdown-title {
+  font-weight: bold;
+}
+.navbar__links.open-dropdown .has-dropdown.showing-content .dropdown-content {
   max-height: 200px;
 }
-.navbar .open-dropdown .link a {
+.navbar__links .link a {
   display: block;
   color: white;
   padding: 20px;
 }
-.navbar .open-dropdown .link a:hover {
+.navbar__links .link a:hover {
   background-color: #3E415B;
 }
 .navbar__logo {
@@ -194,10 +197,14 @@ em {
   }
   .navbar__links {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     -moz-column-gap: 1rem;
          column-gap: 1rem;
+  }
+  .navbar__links.open-dropdown {
+    position: static;
+    flex-direction: row;
+    justify-content: flex-end;
   }
   .navbar__links .link .dropdown-title:hover {
     cursor: pointer;
@@ -210,6 +217,9 @@ em {
   }
   .navbar__links .link.has-dropdown .dropdown-content {
     display: none;
+  }
+  .navbar__links .link.showing-content .dropdown-title {
+    font-weight: bold;
   }
   .navbar__links .link.showing-content .dropdown-content {
     display: flex;
@@ -464,7 +474,7 @@ h3 {
   color: white;
 }
 #content #hero .hero__bg-mask {
-  opacity: 0.5;
+  opacity: 0.7;
 }
 #content #app-leaders {
   background-color: #505477;

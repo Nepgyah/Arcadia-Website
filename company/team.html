@@ -8,21 +8,35 @@
 </head>
 <body>
     
-    <nav class="navbar">
-        <div class="navbar__inner-wrapper">
+    <nav class="navbar" id="top-nav">
+        <div class="navbar-inner-wrapper">
             <div class="navbar__logo">
                 <a href="/">
-                    <img src="/assets/global/logo_white.svg" alt="">
+                    <img src="/assets/global/logo_white.svg" alt="Arcadia logo">
                 </a>
             </div>
-            <div class="navbar__links">
+            <div class="navbar__links" id="dropdown">
                 <div class="link active">
                     <a href="/">Home</a>
                 </div>
-                <div class="link">
-                    <a href="#">Team</a>
+                <!-- <div id="solutions-nav" class="link has-dropdown">
+                    <p class="dropdown-title" onclick="openSubNav('solutions-nav')">Solutions</p>
+                    <div class="dropdown-content">
+                        <a href="company/team.html">Miru</a>
+                        <a href="company/team.html">Yomu</a>
+                    </div>
+                </div> -->
+                <div id="company-nav" class="link has-dropdown">
+                    <p class="dropdown-title" onclick="openSubNav('company-nav')">Company</p>
+                    <div class="dropdown-content">
+                        <a href="#">Team</a>
+                        <!-- <a href="company/team.html">Team</a> -->
+                    </div>
                 </div>
                 <div class="divider"></div>
+            </div>
+            <div class="navbar__mobile-nav mobile-only">
+                <img onclick="openNavBar()" src="/assets/global/hamburger.png" alt="A hamburger">
             </div>
         </div>
     </nav>
@@ -96,5 +110,6 @@
     </footer>
     
     <script src="/js/members.js"></script>
+    <script src="/js/navbar.js"></script>
 </body>
 </html>
