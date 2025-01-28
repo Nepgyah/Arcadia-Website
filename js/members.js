@@ -1,4 +1,4 @@
-var static_link = "/assets/pages/company/team/"
+var static_link = "../assets/pages/company/team/"
 var members = [
     {
         "division" : "leadership",
