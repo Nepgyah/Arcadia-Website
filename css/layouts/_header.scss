@@ -9,35 +9,154 @@
     z-index: 99;
     box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.75);
 
-    &__inner-wrapper {
+    .navbar-inner-wrapper {
         display: flex;
         justify-content: space-between;
-        height: 100%;
         max-width: $max-width;
+        height: 100%;
         padding: .5rem 20px;
         margin: 0 auto;
     }
 
+    &__links {
+        display: none;
+
+    }
+
+    .open-dropdown {
+        position: fixed;
+        left: 0;
+        top: 4rem;
+        background-color: $arcadia-primary-one;
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .has-dropdown {
+
+            .dropdown-title {
+                padding: 20px;
+                color: white;
+
+                &:hover {
+                    background-color: $arcadia-primary-two;
+                    cursor: pointer;
+                }
+            }
+
+            .dropdown-content {
+                overflow: hidden;
+                max-height: 0;
+                transition: all 0.3s ease-in-out;
+
+                a {
+                    padding-left: 60px;
+                }
+            }
+
+            &.showing-content {
+
+                .dropdown-content {
+                    max-height: 200px;
+
+
+                }
+            }
+        }
+        .link {
+
+            a {
+                display: block;
+                color: white;
+                padding: 20px;
+
+                &:hover {
+                    background-color: $arcadia-primary-two;
+                }
+            }
+        }
+    }
+
     &__logo {
         height: inherit;
+
         a, img {
             height: inherit;
         }
     }
 
-    &__links {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        column-gap: 1rem;
+    &__mobile-nav {
+        height: inherit;
+        img {
+            height: 100%;
+            color: white;
+            stroke: white;
+        }
+    }
+}
 
-        .link {
-            a {
-                color: white;
+@media only screen and (min-width: 768px) {
+    .navbar {
+
+        .navbar-inner-wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+    
+        &__logo {
+            height: inherit;
+            a, img {
+                height: inherit;
             }
+        }
+    
+        &__links {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            column-gap: 1rem;
 
-            &.active {
-                color: $arcadia-secondary-one;
+            .link {
+
+                .dropdown-title {
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+                a, p {
+                    color: white;
+                }
+
+                &.has-dropdown {
+                    position: relative;
+                    .dropdown-content {
+                        display: none;
+                    }
+                }   
+
+                &.showing-content {
+                
+                    .dropdown-content {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        position: absolute;
+                        top: 3rem;
+                        background-color: $arcadia-primary-one;
+                        border-radius: 5px;
+                        box-shadow: $box-shadow-default;
+
+                        a {
+                            width: 100%;
+                            padding: 20px;
+                            &:hover {
+                                background-color: $arcadia-primary-two;
+                            }
+                        }
+                    }
+                }
             }
         }
     }

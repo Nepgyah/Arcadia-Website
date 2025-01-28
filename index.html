@@ -8,21 +8,35 @@
 </head>
 <body>
     
-    <nav class="navbar">
-        <div class="navbar__inner-wrapper">
+    <nav class="navbar" id="top-nav">
+        <div class="navbar-inner-wrapper">
             <div class="navbar__logo">
                 <a href="/">
                     <img src="assets/global/logo_white.svg" alt="">
                 </a>
             </div>
-            <div class="navbar__links">
+            <div class="navbar__links" id="dropdown">
                 <div class="link active">
                     <a href="/">Home</a>
                 </div>
-                <div class="link">
-                    <a href="company/team.html">Team</a>
+                <div id="solutions-nav" class="link has-dropdown">
+                    <p class="dropdown-title" onclick="openSubNav('solutions-nav')">Solutions</p>
+                    <div class="dropdown-content">
+                        <a href="company/team.html">Miru</a>
+                        <a href="company/team.html">Yomu</a>
+                    </div>
+                </div>
+                <div id="company-nav" class="link has-dropdown">
+                    <p class="dropdown-title" onclick="openSubNav('company-nav')">Company</p>
+                    <div class="dropdown-content">
+                        <a href="company/team.html">Team</a>
+                        <a href="company/team.html">Team</a>
+                    </div>
                 </div>
                 <div class="divider"></div>
+            </div>
+            <div class="navbar__mobile-nav mobile-only">
+                <img onclick="openNavBar()" src="assets/global/hamburger.png" alt="A hamburger">
             </div>
         </div>
     </nav>
@@ -247,6 +261,7 @@
     </footer>
 
     <script src="js/scrolleffect.js" async></script>
+    <script src="js/navbar.js"></script>
     <script>
         window.addEventListener('load', function() {
             if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
