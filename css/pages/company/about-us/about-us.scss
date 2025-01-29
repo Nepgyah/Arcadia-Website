@@ -9,4 +9,25 @@
             opacity: .7;
         }
     }
+
+    #values {
+        background: $arcadia-gradient-vertical;
+
+        #values-blob {
+            top: 0;
+            right: 0;
+        }
+        
+        .section-content {
+            img {
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .value-list {
+            display: flex;
+            flex-direction: column;
+            row-gap: 2rem;
+        }
+    }
 }

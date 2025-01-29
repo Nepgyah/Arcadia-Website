@@ -4,13 +4,23 @@
     padding: 4.5rem 20px;
     position: relative;
     overflow-x: hidden;
+
     &__bg-image {
         position: absolute;
+        z-index: 1;
     }
 
     &__wrapper {
         max-width: 75rem;
         margin: auto;
+        position: relative;
+        z-index: 2;
+        
+        img {
+            border-radius: 15px;
+            box-shadow: $box-shadow-default;
+        }
+
     }
 
     &--margin-top-large {
@@ -56,6 +66,31 @@
 
         &__name {
             font-size: .75rem;
+        }
+    }
+
+    .section-content {
+
+        &--two-col {
+            display: flex;
+            flex-direction: column;
+            row-gap: 2rem;
+        }
+
+        &__text {
+            display: flex;
+            flex-direction: column;
+            row-gap: 1.25rem;
+
+            &--white {
+                h3 {
+                    color: $arcadia-secondary-one;
+                } 
+
+                p {
+                    color: white;
+                }
+            }
         }
     }
 }
