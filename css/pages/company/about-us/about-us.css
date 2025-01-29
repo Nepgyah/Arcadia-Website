@@ -330,16 +330,14 @@ em {
   margin: auto;
   position: relative;
   z-index: 2;
-}
-.section__wrapper img {
-  border-radius: 15px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  row-gap: 3.5rem;
 }
 .section--margin-top-large {
   padding-top: 6.5rem;
 }
 .section .section-main {
-  margin-bottom: 3.5rem;
   display: flex;
   flex-direction: column;
   row-gap: 2rem;
@@ -369,6 +367,10 @@ em {
 .section .section-main__name {
   font-size: 0.75rem;
 }
+.section .section-content img {
+  border-radius: 15px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 .section .section-content--two-col {
   display: flex;
   flex-direction: column;
@@ -384,6 +386,11 @@ em {
 }
 .section .section-content__text--white p {
   color: white;
+}
+.section .section-quote {
+  border-radius: 24px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 1rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -404,6 +411,21 @@ em {
     grid-template-columns: 1fr 1fr;
     -moz-column-gap: 1rem;
          column-gap: 1rem;
+  }
+  .section .section-quote {
+    display: grid;
+    -moz-column-gap: 1rem;
+         column-gap: 1rem;
+    padding: 2.5rem;
+  }
+  .section .section-quote .section-main {
+    justify-content: center;
+  }
+  .section .section-quote__image .person-name {
+    font-weight: bold;
+  }
+  .section .section-quote__image .person-title {
+    font-weight: 300;
   }
 }
 .footer {
@@ -522,4 +544,11 @@ h3 {
   display: flex;
   flex-direction: column;
   row-gap: 2rem;
+}
+#content #founder-quote .section-quote {
+  background: linear-gradient(to right, #483D8B, #9370DB);
+  grid-template-columns: 60% 40%;
+}
+#content #founder-quote .section-quote p, #content #founder-quote .section-quote h2 {
+  color: white;
 }/*# sourceMappingURL=about-us.css.map */

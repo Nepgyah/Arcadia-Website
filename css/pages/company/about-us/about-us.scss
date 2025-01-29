@@ -30,4 +30,14 @@
             row-gap: 2rem;
         }
     }
+
+    #founder-quote {
+        .section-quote {
+            background: linear-gradient(to right, #483D8B, #9370DB);
+            grid-template-columns: 60% 40%;
+            p, h2 {
+                color: white;
+            }
+        }
+    }
 }
