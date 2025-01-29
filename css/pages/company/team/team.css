@@ -240,7 +240,6 @@ em {
   }
 }
 .hero {
-  margin-top: 4rem;
   position: relative;
   overflow: hidden;
 }
@@ -272,18 +271,24 @@ em {
   row-gap: 1rem;
 }
 .hero--full-height {
-  height: calc(100dvh - 4rem);
+  min-height: 960px;
 }
 .hero--half-height {
-  min-height: calc(50dvh - 4rem);
+  min-height: 480px;
 }
 .hero .hero-text {
   display: flex;
   flex-direction: column;
   row-gap: 2rem;
 }
+.hero .hero-text h1 {
+  font-size: 2rem;
+}
 .hero .hero-text--center {
   text-align: center;
+}
+.hero .hero-text--center .hero__button-container {
+  align-items: center;
 }
 .hero .hero-text--white h1, .hero .hero-text--white p {
   color: white;
@@ -295,6 +300,9 @@ em {
 @media only screen and (min-width: 768px) {
   .hero__wrapper {
     padding: 7rem 20px;
+  }
+  .hero .hero-text--center .hero__button-container {
+    justify-content: center;
   }
   .hero__button-container {
     flex-direction: row;
@@ -331,6 +339,22 @@ em {
 }
 .section .section-main--white h2, .section .section-main--white p {
   color: white;
+}
+.section .section-main--headline .section-main__mini-title {
+  position: relative;
+  font-size: 1.25rem;
+}
+.section .section-main--headline .section-main__mini-title::before {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 30%;
+  height: 2px;
+  background-color: #FFAAAA;
+}
+.section .section-main__mini-title {
+  font-size: 0.75rem;
 }
 .section .section-main--center {
   text-align: center;
@@ -430,6 +454,10 @@ h2 {
 
 h3 {
   font-size: 1.3rem;
+}
+
+#content {
+  margin-top: 4rem;
 }
 
 .mobile-only {

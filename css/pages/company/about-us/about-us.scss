@@ -1,0 +1,12 @@
+@use '../../../main';
+@use '../../../abstracts/variables' as *;
+
+#content {
+
+    #hero {
+
+        .hero__bg-mask {
+            opacity: .7;
+        }
+    }
+}

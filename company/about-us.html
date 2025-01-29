@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcadia</title>
+    <link rel="stylesheet" href="../css/pages/company/about-us/about-us.css">
+</head>
+<body>
+    
+    <nav class="navbar" id="top-nav">
+        <div class="navbar-inner-wrapper">
+            <div class="navbar__logo">
+                <a href="../index.html">
+                    <img src="../assets/global/logo_white.svg" alt="Arcadia logo">
+                </a>
+            </div>
+            <div class="navbar__links" id="dropdown">
+                <div class="link active">
+                    <a href="../index.html">Home</a>
+                </div>
+                <!-- <div id="solutions-nav" class="link has-dropdown">
+                    <p class="dropdown-title" onclick="openSubNav('solutions-nav')">Solutions</p>
+                    <div class="dropdown-content">
+                        <a href="company/team.html">Miru</a>
+                        <a href="company/team.html">Yomu</a>
+                    </div>
+                </div> -->
+                <div id="company-nav" class="link has-dropdown">
+                    <p class="dropdown-title" onclick="openSubNav('company-nav')">Company</p>
+                    <div class="dropdown-content">
+                        <a href="./about-us.html">About Us</a>
+                        <a href="#">Team</a>
+                    </div>
+                </div>
+                <div class="divider"></div>
+            </div>
+            <div class="navbar__mobile-nav mobile-only">
+                <img onclick="openNavBar()" src="../assets/global/hamburger.png" alt="A hamburger">
+            </div>
+        </div>
+    </nav>
+
+    <div id="content">
+
+        <section id="hero" class="hero hero--half-height">
+            <img class="hero__bg-image" src="../assets/pages/company/about-us/hero.jpg" alt="Anime themed world">
+            <div class="hero__bg-mask"></div>
+            <div class="hero__wrapper">
+                <div class="hero-text hero-text--center hero-text--white">
+                    <h1 class="hero-text__headline">Creators of Arcadia,<br />Team Double Dragon</h1>
+                    <p>Discover and learn about the company dedicated to creating the ultimate Otaku solution</p>
+                    <div class="hero__button-container">
+                        <a class="button button--primary" href="#primary-apps">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="intro" class="section">
+            <div class="section__wrapper">
+                <div class="section-main section-main--headline">
+                    <p class="section-main__mini-title">Our Company</p>
+                    <h2 class="section-main__main-title">Founded By Fans,<br />For Fans Who Share Our Passion</h2>
+                    <p class="section-main__description">At Team Double Dragon, we create because of what we love. Born from a shared passion for anime, gaming, and creativity, our mission is simple: to build a platform that celebrates fandom and connects fans worldwide. We’re not in it for corporate greed; we’re here to bring joy, inspire imagination, and foster a vibrant community of like-minded enthusiasts.</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="../js/navbar.js"></script>
+</body>
+</html>

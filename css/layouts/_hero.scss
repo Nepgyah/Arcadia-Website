@@ -1,7 +1,6 @@
 @use '../abstracts/variables' as *;
 
 .hero {
-    margin-top: 4rem;
     position: relative;
     overflow: hidden;
 
@@ -36,11 +35,11 @@
     }
 
     &--full-height {
-        height: calc(100dvh - 4rem);
+        min-height: 960px;
     }
     
     &--half-height {
-        min-height: calc(50dvh - 4rem);
+        min-height: 480px;
     }
     
     .hero-text {
@@ -48,8 +47,16 @@
         flex-direction: column;
         row-gap: 2rem;
 
+        h1 {
+            font-size: 2rem;
+        }
+
         &--center {
             text-align: center;
+
+            .hero__button-container {
+                align-items: center;
+            }
         }
 
         &--white {
@@ -70,6 +77,17 @@
     
         &__wrapper {
             padding: 7rem 20px;
+        }
+
+        
+        .hero-text {
+
+            &--center {
+
+                .hero__button-container {
+                    justify-content: center;
+                }
+            }
         }
 
         &__button-container {

@@ -29,6 +29,27 @@
             }
         }
 
+        &--headline {
+            .section-main__mini-title {
+                position: relative;
+                font-size: 1.25rem;
+                
+                &::before {
+                    content: "";
+                    position: absolute;
+                    bottom: -8px;
+                    left: 0;
+                    width: 30%;
+                    height: 2px;
+                    background-color: $arcadia-secondary-one;
+                }
+            }
+        }
+
+        &__mini-title {
+            font-size: .75rem;
+        }
+
         &--center {
             text-align: center;
         }
