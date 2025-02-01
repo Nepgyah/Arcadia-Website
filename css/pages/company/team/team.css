@@ -64,14 +64,14 @@ em {
 
 @font-face {
   font-family: "Noto Sans JP";
-  src: url("/css/base/noto_sans_jp/NotoSansJP-VariableFont_wght.ttf") format("truetype-variations");
+  src: url("./noto_sans_jp/NotoSansJP-VariableFont_wght.ttf") format("truetype-variations");
   font-weight: 100 900; /* Variable font supports a range of weights */
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Noto Serif JP";
-  src: url("/css/base/noto_serif_jp/NotoSerifJP-VariableFont_wght.ttf") format("truetype-variations");
+  src: url("./noto_serif_jp/NotoSerifJP-VariableFont_wght.ttf") format("truetype-variations");
   font-weight: 100 900; /* Variable font supports a range of weights */
   font-style: normal;
   font-display: swap;
@@ -271,7 +271,7 @@ em {
   row-gap: 1rem;
 }
 .hero--full-height {
-  min-height: 960px;
+  min-height: 550px;
 }
 .hero--half-height {
   min-height: 480px;
@@ -300,6 +300,12 @@ em {
 @media only screen and (min-width: 768px) {
   .hero__wrapper {
     padding: 7rem 20px;
+  }
+  .hero--full-height {
+    min-height: 960px;
+  }
+  .hero .hero-text h1 {
+    font-size: 4rem;
   }
   .hero .hero-text--center .hero__button-container {
     justify-content: center;

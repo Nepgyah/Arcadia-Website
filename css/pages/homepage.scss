@@ -42,13 +42,14 @@
         }
 
         &#miru {
+            margin-top: 1rem;
             background-color: $miru-primary;
-            min-height: 330px;
+            height: 350px;
         }
 
         &#yomu {
             background-color: $yomu-primary;
-            min-height: 327px;
+            height: 350px;
         }
 
         &#kau {
@@ -75,8 +76,11 @@
 
         #primary-apps {
 
+            .section__wrapper {
+                row-gap: 1rem;
+            }
+
             .primary-apps-bottom-half {
-                margin-top: 1rem;
     
                 .left-col {
                     margin-bottom: 1rem;
@@ -96,6 +100,7 @@
 
         .section-content {
             display: flex;
+            flex-direction: row;
             flex-wrap: wrap;
             align-items: center;
             justify-content: center;
@@ -105,6 +110,8 @@
                 max-width: 100px;
                 height: unset;
                 margin: 1rem;
+                border-radius: 0;
+                box-shadow: none;
             }
         }
     }
@@ -188,7 +195,7 @@
         .app-tile {
     
             &#miru {
-                height: 350px;
+                margin-top: 0px;
             }
     
             &#yomu {

@@ -35,7 +35,7 @@
     }
 
     &--full-height {
-        min-height: 960px;
+        min-height: 550px;
     }
     
     &--half-height {
@@ -79,8 +79,15 @@
             padding: 7rem 20px;
         }
 
+        &--full-height {
+            min-height: 960px;
+        }
         
         .hero-text {
+
+            h1 {
+                font-size: 4rem;
+            }
 
             &--center {
 
