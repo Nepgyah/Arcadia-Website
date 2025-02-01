@@ -150,6 +150,10 @@
             }
 
             &__image {
+
+                img {
+                    max-height: 300px;
+                }
                 .person-name {
                     font-weight: bold;
                 }

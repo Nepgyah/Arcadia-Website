@@ -436,6 +436,9 @@ em {
   .section .section-quote .section-main {
     justify-content: center;
   }
+  .section .section-quote__image img {
+    max-height: 300px;
+  }
   .section .section-quote__image .person-name {
     font-weight: bold;
   }
@@ -567,6 +570,9 @@ h3 {
 #content #founder-quote .section-quote p, #content #founder-quote .section-quote h2 {
   color: white;
 }
+#content #awards .section-content--four-col {
+  grid-template-columns: 1fr;
+}
 #content #awards .award-card {
   padding: 0.75rem;
   display: flex;
@@ -585,4 +591,10 @@ h3 {
 }
 #content #awards .award-card__description {
   font-size: 0.75rem;
+}
+
+@media only screen and (min-width: 768px) {
+  #content #awards .section-content--four-col {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }/*# sourceMappingURL=about-us.css.map */

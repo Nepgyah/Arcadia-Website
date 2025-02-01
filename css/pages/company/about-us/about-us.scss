@@ -43,6 +43,9 @@
 
     #awards {
 
+        .section-content--four-col {
+            grid-template-columns: 1fr;
+        }
         .award-card {
             padding: .75rem;
             display: flex;
@@ -63,6 +66,18 @@
 
             &__description {
                 font-size: .75rem;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    #content {
+        
+        #awards {
+            .section-content--four-col {
+                grid-template-columns: 1fr 1fr 1fr 1fr;
             }
         }
     }
