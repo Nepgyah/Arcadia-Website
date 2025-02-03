@@ -437,7 +437,7 @@ em {
     justify-content: center;
   }
   .section .section-quote__image img {
-    max-height: 300px;
+    max-height: 400px;
   }
   .section .section-quote__image .person-name {
     font-weight: bold;
@@ -556,6 +556,7 @@ h3 {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 0;
 }
 #content .app-tile__text {
   padding: 1.3rem;

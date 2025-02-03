@@ -437,7 +437,7 @@ em {
     justify-content: center;
   }
   .section .section-quote__image img {
-    max-height: 300px;
+    max-height: 400px;
   }
   .section .section-quote__image .person-name {
     font-weight: bold;
@@ -574,7 +574,7 @@ h3 {
   grid-template-columns: 1fr;
 }
 #content #awards .award-card {
-  padding: 0.75rem;
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
   row-gap: 2rem;
@@ -591,6 +591,39 @@ h3 {
 }
 #content #awards .award-card__description {
   font-size: 0.75rem;
+}
+#content #job .section-main {
+  justify-content: center;
+}
+#content #job .section-content__image {
+  position: relative;
+}
+#content #job .section-content__image #job-blob {
+  position: absolute;
+  z-index: 1;
+  box-shadow: none;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+#content #job .section-content__image #abydos-club {
+  margin: auto;
+  position: relative;
+  z-index: 2;
+}
+#content #job .section-content__image #astral-express {
+  position: relative;
+  z-index: 2;
+  margin-top: 1rem;
+  float: right;
+  margin-right: 0.5rem;
+}
+#content #streamer-quote .section-quote {
+  background: linear-gradient(to right, #F6A875, #E63946);
+  grid-template-columns: 40% 60%;
+}
+#content #streamer-quote .section-quote p, #content #streamer-quote .section-quote h2 {
+  color: white;
 }
 
 @media only screen and (min-width: 768px) {

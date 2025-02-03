@@ -97,6 +97,10 @@
                 }
             }
         }
+
+        &__image {
+         
+        }
     }
 
     .section-quote {
@@ -152,7 +156,7 @@
             &__image {
 
                 img {
-                    max-height: 300px;
+                    max-height: 400px;
                 }
                 .person-name {
                     font-weight: bold;

@@ -437,7 +437,7 @@ em {
     justify-content: center;
   }
   .section .section-quote__image img {
-    max-height: 300px;
+    max-height: 400px;
   }
   .section .section-quote__image .person-name {
     font-weight: bold;

@@ -47,7 +47,7 @@
             grid-template-columns: 1fr;
         }
         .award-card {
-            padding: .75rem;
+            padding: 1.5rem;
             display: flex;
             flex-direction: column;
             row-gap: 2rem;
@@ -66,6 +66,50 @@
 
             &__description {
                 font-size: .75rem;
+            }
+        }
+    }
+
+    #job {
+
+        .section-main {
+            justify-content: center;        
+        }
+
+        .section-content__image {
+            position: relative;
+
+            #job-blob {
+                position: absolute;
+                z-index: 1;
+                box-shadow: none;
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
+            }
+    
+            #abydos-club {
+                margin: auto;
+                position: relative;
+                z-index: 2;
+            }
+            
+            #astral-express {
+                position: relative;
+                z-index: 2;
+                margin-top: 1rem;
+                float: right;
+                margin-right: .5rem;
+            }
+        }
+    }
+
+    #streamer-quote {
+        .section-quote {
+            background: linear-gradient(to right, #F6A875, #E63946);
+            grid-template-columns: 40% 60%;
+            p, h2 {
+                color: white;
             }
         }
     }
