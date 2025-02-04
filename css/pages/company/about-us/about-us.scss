@@ -113,6 +113,20 @@
             }
         }
     }
+
+    #collab {
+
+        .section-content__image {
+            display: flex;
+            flex-wrap: wrap;
+
+            img {
+                padding: 2rem;
+                width: 50%;
+                box-shadow: none;
+            }
+        }
+    }
 }
 
 @media only screen and (min-width: 768px) {
