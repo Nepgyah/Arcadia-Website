@@ -72,7 +72,9 @@
                 white-space: nowrap;
                 display: block;
                 color: white;
-                padding: 20px;
+                padding: 1rem;
+                border-radius: 1rem;
+
                 &:hover {
                     background-color: $arcadia-primary-two;
                 }

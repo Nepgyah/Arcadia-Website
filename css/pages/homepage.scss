@@ -20,6 +20,7 @@
 
         &__text {
             padding: 1.3rem;
+            position: relative;
 
             &--white {
                 
@@ -30,6 +31,14 @@
 
             h3 {
                 margin-bottom: 1.5rem;
+            }
+
+            .japanese {
+                font-size: 2rem;
+                position: absolute;
+                opacity: .3;
+                bottom: 1.3rem;
+                right: 1.3rem;
             }
         }
 

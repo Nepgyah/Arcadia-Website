@@ -165,7 +165,8 @@ em {
   white-space: nowrap;
   display: block;
   color: white;
-  padding: 20px;
+  padding: 1rem;
+  border-radius: 1rem;
 }
 .navbar__links .link a:hover {
   background-color: #3E415B;
@@ -565,12 +566,20 @@ h3 {
 }
 #content .app-tile__text {
   padding: 1.3rem;
+  position: relative;
 }
 #content .app-tile__text--white h3, #content .app-tile__text--white p {
   color: white;
 }
 #content .app-tile__text h3 {
   margin-bottom: 1.5rem;
+}
+#content .app-tile__text .japanese {
+  font-size: 2rem;
+  position: absolute;
+  opacity: 0.3;
+  bottom: 1.3rem;
+  right: 1.3rem;
 }
 #content .app-tile--vertical {
   display: grid;
