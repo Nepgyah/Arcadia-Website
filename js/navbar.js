@@ -1,12 +1,12 @@
 var isOpen = false;
 
 function openNavBar() {
-    var nav = document.getElementById('dropdown');
+    var nav = document.getElementById('navigation');
     isOpen = !isOpen;
     if (isOpen) {
-        nav.classList.add('open-dropdown')
+        nav.classList.add('nav--open')
     } else {
-        nav.classList.remove('open-dropdown')
+        nav.classList.remove('nav--open')
     }
 }
 
@@ -14,9 +14,9 @@ function openSubNav(category) {
     console.log('Opening', category)
     var dropDownNav = document.getElementById(category);
     
-    if (dropDownNav.className === "link has-dropdown") {
-        dropDownNav.classList.add('showing-content')
+    if (dropDownNav.classList.contains('nav__item--dropdown-open')) {
+        dropDownNav.classList.remove('nav__item--dropdown-open')
     } else {
-        dropDownNav.classList.remove('showing-content')
+        dropDownNav.classList.add('nav__item--dropdown-open')
     }
 }
