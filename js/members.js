@@ -174,7 +174,6 @@ var members = [
 
 function displayMembers() {
     members.forEach(division => {
-        console.log("Members of: ", division.division)
         var container = document.getElementById(division.division).querySelector('.member-list')
         division.members.forEach(member => {
             var member_div = document.createElement("div");
@@ -196,7 +195,6 @@ function displayMembers() {
             member_div.append(name)
             member_div.append(position)
             container.append(member_div)
-            console.log("Adding: ", member.name)
         })
     });
 }
