@@ -1,4 +1,5 @@
 var isOpen = false;
+var openDropdownClass = 'nav__item--dropdown-open';
 
 function openNavBar() {
     var nav = document.getElementById('navigation');
@@ -11,12 +12,17 @@ function openNavBar() {
 }
 
 function openSubNav(category) {
-    console.log('Opening', category)
-    var dropDownNav = document.getElementById(category);
-    
-    if (dropDownNav.classList.contains('nav__item--dropdown-open')) {
-        dropDownNav.classList.remove('nav__item--dropdown-open')
-    } else {
-        dropDownNav.classList.add('nav__item--dropdown-open')
+
+    var dropdowns = document.getElementsByClassName('nav__item--has-dropdown');
+    for (let index = 0; index < dropdowns.length; index++) {
+        if (dropdowns[index].id === category) {
+            if (dropdowns[index].classList.contains(openDropdownClass)) {
+                dropdowns[index].classList.remove(openDropdownClass)
+            } else {
+                dropdowns[index].classList.add(openDropdownClass)
+            }
+        } else {
+            dropdowns[index].classList.remove(openDropdownClass);
+        }
     }
 }

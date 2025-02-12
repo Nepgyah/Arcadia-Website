@@ -203,6 +203,9 @@ em {
     display: flex;
     align-items: center;
   }
+  .header .nav .top-level {
+    border-radius: 10px;
+  }
   .header .nav a, .header .nav__dropdown-header {
     padding: 0.5rem 20px;
   }

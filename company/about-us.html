@@ -9,38 +9,40 @@
 </head>
 <body>
     
-    <nav class="navbar" id="top-nav">
-        <div class="navbar-inner-wrapper">
-            <div class="navbar__logo">
+    <header class="header" id="top-nav">
+        <div class="header__inner-wrapper">
+            <div class="header__logo">
                 <a href="../index.html">
-                    <img src="../assets/global/logo_white.svg" alt="Arcadia logo">
+                    <img src="../assets/global/logo_white.svg" alt="">
                 </a>
             </div>
-            <div class="navbar__links" id="dropdown">
-                <div class="link active">
-                    <a href="../index.html">Home</a>
+            <nav class="nav" id="navigation">
+                <div class="nav__item">
+                    <a class="link active top-level" href="../index.html">Home</a>
                 </div>
-                <!-- <div id="solutions-nav" class="link has-dropdown">
-                    <p class="dropdown-title" onclick="openSubNav('solutions-nav')">Solutions</p>
-                    <div class="dropdown-content">
-                        <a href="company/team.html">Miru</a>
-                        <a href="company/team.html">Yomu</a>
-                    </div>
-                </div> -->
-                <div id="company-nav" class="link has-dropdown">
-                    <p class="dropdown-title" onclick="openSubNav('company-nav')">Company</p>
-                    <div class="dropdown-content">
-                        <a href="#">About Us</a>
-                        <a href="./team.html">Team</a>
+                <div id="nav-apps" class="nav__item nav__item--has-dropdown">
+                    <div class="nav__dropdown-header top-level" onclick="openSubNav('nav-apps')">Apps <img class="desktop-only nav__arrow" src="../assets/global/navigation/arrow-white.svg" alt=""></div>
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="company/about-us.html">Miru</a></li>
+                        </ul>
                     </div>
                 </div>
-                <div class="divider"></div>
-            </div>
-            <div class="navbar__mobile-nav mobile-only">
+                <div id="nav-company" class="nav__item nav__item--has-dropdown">
+                    <div class="nav__dropdown-header top-level" onclick="openSubNav('nav-company')">D2X <img class="desktop-only nav__arrow" src="../assets/global/navigation/arrow-white.svg" alt=""></div>
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="./team.html">Team</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="header__mobile-nav mobile-only">
                 <img onclick="openNavBar()" src="../assets/global/hamburger.png" alt="A hamburger">
             </div>
         </div>
-    </nav>
+    </header>
 
     <div id="content">
 

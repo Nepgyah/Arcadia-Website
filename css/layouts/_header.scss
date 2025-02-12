@@ -189,7 +189,10 @@
             display: flex;
             align-items: center;
             // display: none;
-    
+            .top-level {
+                border-radius: 10px;
+            }
+            
             .active {
                 // color: $arcadia-secondary-one;
                 // font-weight: bold;
