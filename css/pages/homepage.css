@@ -925,6 +925,39 @@ h3 {
     margin: auto;
     height: 100%;
   }
+  #content #roadmap {
+    overflow: hidden;
+  }
+  #content #roadmap #red-leaves {
+    top: 0;
+    left: 0;
+  }
+  #content #roadmap #mountains {
+    bottom: -1px;
+    left: 0;
+  }
+  #content #roadmap #mountain-gate {
+    bottom: -1px;
+    right: -1px;
+  }
+  #content #roadmap #blooming-branches {
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  #content #roadmap #red-moon {
+    right: 20px;
+    top: 20px;
+  }
+  #content #roadmap .section__wrapper .section-content .section-content__text {
+    width: 40%;
+  }
+  #content #roadmap .section__wrapper .section-content .section-content__text#mid-term {
+    margin-left: 20%;
+  }
+  #content #roadmap .section__wrapper .section-content .section-content__text#long-term {
+    margin-left: 5%;
+  }
   #content #secondary-apps #iku, #content #secondary-apps #hiku {
     height: 339px;
   }

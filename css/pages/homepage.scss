@@ -282,6 +282,7 @@
             object-fit: cover;
         }
     }
+
     #secondary-apps {
         background: $gradient-orange-pink-vertical;
 
@@ -506,6 +507,50 @@
             }
         }
 
+        #roadmap {
+            overflow: hidden;
+
+            #red-leaves {
+                top: 0;
+                left: 0;
+            }
+
+            #mountains {
+                bottom: -1px;
+                left: 0;
+            }
+
+            #mountain-gate {
+                bottom:-1px;
+                right: -1px;
+            }
+
+            #blooming-branches {
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            #red-moon {
+                right: 20px;
+                top: 20px;
+            }
+            .section__wrapper {
+                .section-content {
+                    .section-content__text {
+                        width: 40%;
+
+                        &#mid-term {
+                            margin-left: 20%;
+                        }
+
+                        &#long-term {
+                            margin-left: 5%;
+                        }
+                    }
+                }
+            }
+        }
         #secondary-apps {
     
             #iku, #hiku {
