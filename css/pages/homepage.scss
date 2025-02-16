@@ -159,6 +159,67 @@
         }
     }
 
+    #stats {
+
+        img {
+            box-shadow: none;
+        }
+
+        .stat-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            row-gap: 2rem;
+            .stat {
+                display: flex;
+
+                .ja {
+                    writing-mode: vertical-rl;
+                    text-orientation: upright;
+                    font-size: 2rem;
+                }
+
+                .text {
+                    p {
+                        color: $arcadia-primary-one;
+                    }
+
+                    .number {
+                        font-size: 2rem;
+                        font-weight: bold;
+                    }
+
+                    .label {
+                        font-size: 1rem;
+                    }
+                }
+
+                &#stat-one {
+                    .ja {
+                        color: $yomu-primary;
+                    }
+                }
+
+                &#stat-two {
+                    .ja {
+                        color: $miru-primary;
+                    }
+                }
+
+                &#stat-three {
+                    .ja {
+                        color: $asobu-primary;
+                    }
+                }
+
+                &#stat-four {
+                    .ja {
+                        color: $iku-primary;
+                    }
+                }
+            }
+        }
+    }
+
     #partners {
         background: $gradient-pink-blue-horizontal;
 
@@ -350,6 +411,43 @@
             }
         }
 
+        #stats {
+
+            #arcadia-text {
+                white-space: nowrap;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 5px;
+                opacity: 10%;
+                font-size: 6rem;
+                font-weight: bold;
+            }
+
+            .stat-container {
+                .stat {
+                    .ja {
+                        font-size: 4rem;
+                    }
+
+                    .text {
+                        p {
+                            color: $arcadia-primary-one;
+                        }
+
+                        .number {
+                            font-size: 4rem;
+                            font-weight: bold;
+                        }
+
+                        .label {
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+            }
+        }
+        
         #partners {
 
             #partners-sakura {

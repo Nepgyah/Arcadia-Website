@@ -493,6 +493,11 @@ a {
   text-decoration: none;
 }
 
+.vertical-text {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
 h1, h2, h3, h4 {
   font-weight: bold;
   font-family: "Noto Serif JP", Arial, sans-serif;
