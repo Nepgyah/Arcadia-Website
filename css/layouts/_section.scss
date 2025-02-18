@@ -167,6 +167,11 @@
                 column-gap: 2rem;
             }
 
+            &--three-col {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 2rem;
+            }
             &--four-col {
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr 1fr;

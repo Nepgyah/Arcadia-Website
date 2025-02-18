@@ -283,46 +283,124 @@
         }
     }
 
-    #secondary-apps {
+    #secondary-stories-wrapper {
         background: $gradient-orange-pink-vertical;
 
-        .left-col {
-            margin-bottom: 1rem;
+        #secondary-apps {
+
+            .left-col {
+                margin-bottom: 1rem;
+            }
+    
+            .right-col {
+                display: flex;
+                flex-direction: column;
+                row-gap: 1rem;
+            }
+            #iku, #hiku, #shiru, #kumitateru, #kiku {
+                height: 220px;
+            }
+    
+            #iku {
+                background-color: $iku-primary;
+                grid-template-columns: 45% 55%;
+                margin-bottom: 1rem;
+            }
+    
+            #hiku {
+                background-color: $hiku-primary;
+                grid-template-columns: 55% 45%;
+            }
+    
+            #shiru {
+                background-color: $shiru-primary;
+                grid-template-columns: 60% 40%;
+            }
+    
+            #kumitateru {
+                background-color: $kumitateru-primary;
+                grid-template-columns: 40% 60%;
+            }
+    
+            #kiku {
+                background-color: $kiku-primary;
+                grid-template-columns: 50% 50%;
+            }
         }
 
-        .right-col {
-            display: flex;
-            flex-direction: column;
-            row-gap: 1rem;
-        }
-        #iku, #hiku, #shiru, #kumitateru, #kiku {
-            height: 220px;
-        }
+        #stories {
 
-        #iku {
-            background-color: $iku-primary;
-            grid-template-columns: 45% 55%;
-            margin-bottom: 1rem;
-        }
+            .two-stories {
+                display: flex;
+                flex-direction: column;
+                row-gap: 2rem;
+            }
 
-        #hiku {
-            background-color: $hiku-primary;
-            grid-template-columns: 55% 45%;
-        }
+            .story-entry {
+                color: white;
+                border-radius: 5px;
+                background-color: $arcadia-primary-one;
+                box-shadow: $box-shadow-default;
+                overflow: hidden;
 
-        #shiru {
-            background-color: $shiru-primary;
-            grid-template-columns: 60% 40%;
-        }
+                &#keanu-story {
+                    flex-grow: 1;
+                }
 
-        #kumitateru {
-            background-color: $kumitateru-primary;
-            grid-template-columns: 40% 60%;
-        }
+                &__header{
+                    position: relative;
+                }
+                
+                &__profile-picture {
+                    width: 50%;
+                    height: 200px;
+                    width: 200px;
+                    overflow: hidden;
 
-        #kiku {
-            background-color: $kiku-primary;
-            grid-template-columns: 50% 50%;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+                        border-radius: 0;
+                    }
+                }
+
+                &__overview {
+                    position: absolute;
+                    left: 175px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    
+                    p {
+                        color: white;
+
+                        &:first-child {
+                            font-size: 2rem;
+                            font-weight: bold;
+                            line-height: 44px;
+
+                            span {
+                                color: $arcadia-secondary-one;
+                            }
+                        }
+
+                        &:last-child {
+                            margin-top: 1rem;
+                            font-size: .75rem;
+                        }
+                    }
+
+                }
+
+                &__text {
+                    padding: 2rem;
+                    
+                    p {
+                        color: white;
+                    }
+                }
+            }
         }
     }
 }
@@ -551,10 +629,20 @@
                 }
             }
         }
-        #secondary-apps {
+
+        #secondary-stories-wrapper {
+            #secondary-apps {
     
-            #iku, #hiku {
-                height: 339px;
+                #iku, #hiku {
+                    height: 339px;
+                }
+            }
+
+            #stories {
+                
+                #jamal-story {
+                    height: 100%;
+                }
             }
         }
     }
